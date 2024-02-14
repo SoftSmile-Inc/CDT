@@ -207,6 +207,7 @@ CDT_EXPORT Box2d<T> envelopBox(const std::vector<V2d<T> >& vertices);
 /// \note: hash Edge is specialized at the bottom
 struct CDT_EXPORT Edge
 {
+    Edge() : m_vertices(noVertex, noVertex) {}
     /// Constructor
     Edge(VertInd iV1, VertInd iV2);
     /// Equals operator
